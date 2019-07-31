@@ -37,6 +37,7 @@ def logged_in():
 
 @app.route('/logout')
 def logout():
+    login_session['logged_in'] = False
     return home()
 
 

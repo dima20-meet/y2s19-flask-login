@@ -12,6 +12,11 @@ Hi {{session['name']}}, you are logged in.
 <input type="submit" value="Log in">
 </form>
 
+<form action="/food" method="POST"> My favorite food is:
+  <input type="fav_food" name="favorite food" placeholder="Username">
+  <input type="submit" value="submit">
+</form>
+
 <form action="/signup" method="POST">
   <input type="username" name="username" placeholder="Username">
 <input type="password" name="password" placeholder="Password">

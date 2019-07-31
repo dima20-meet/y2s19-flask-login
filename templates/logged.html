@@ -1,6 +1,14 @@
-
 <h1>
 Hi {{session['name']}}, you are logged in.
 </h1>
 
+
+<form action="/logged.html" method="POST"> My favorite food is:
+  <input type="fav_food" name="favorite food" placeholder="Username">
+  <input type="submit" value="submit">
+</form>
+<p>
+	My favorite food is {{session['food']}}!
+</p>
 <a href = "/logout"> Logout </a>
+
